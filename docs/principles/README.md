@@ -1,16 +1,30 @@
-# AgentOps Foundations
+# Knowledge OS Foundations
 
-**Philosophical and theoretical foundations for operating AI agents with production-grade discipline.**
+**Philosophical and theoretical foundations for reliable knowledge work at scale.**
 
-This directory contains deep dives into the core concepts that underpin the AgentOps framework. These documents explore the **WHY** behind the practices. For operational **HOW**, implementation examples are available in enterprise production environments.
+This directory contains deep dives into the core concepts that underpin the Knowledge OS framework. These documents explore the **WHY** behind the practices. For operational **HOW**, see the 12 Factors.
 
 ---
 
 ## Overview
 
-AgentOps rests on **Four Pillars** (disciplines) and enforces **Five Laws** (operational principles). The foundations also introduce two critical frameworks: **Context Engineering** (the 40% rule) and **Knowledge OS** (Git as institutional memory).
+Knowledge OS rests on **Five Pillars** (foundational disciplines) and enforces **Five Laws** (mandatory principles).
 
-Together, these create a comprehensive philosophy for operating AI agents with the same rigor you'd apply to production infrastructure.
+### The Five Pillars (Foundation)
+
+1. **Constraint-Based Engineering** - Start with limits, optimize within them
+2. **DevOps + SRE** - Operational rigor and reliability
+3. **Learning Science** - How humans and systems learn
+4. **Context Engineering** - Manage cognitive load (40% rule)
+5. **Knowledge OS** - Git as institutional memory
+
+→ [five-pillars.md](five-pillars.md)
+
+### The Five Laws (Mandatory)
+
+→ [five-laws.md](five-laws.md)
+
+Together, these create a comprehensive philosophy for operating knowledge work with the same rigor you'd apply to production infrastructure.
 
 ---
 
@@ -59,22 +73,23 @@ The original 12-Factor App, 12-Factor Agents (Dex Horthy), and 12-Factor AgentOp
 
 ---
 
-### [The Four Pillars](./four-pillars.md)
+### [The Five Pillars](./five-pillars.md)
 
-**Read time:** 15 minutes
-**When to read:** Understanding the philosophical basis of AgentOps
+**Read time:** 20 minutes
+**When to read:** Understanding the philosophical basis of Knowledge OS
 
 **What it covers:**
-- **Pillar 1: DevOps + SRE** - Operational rigor and reliability engineering
-- **Pillar 2: Learning Science** - How humans and systems acquire knowledge
-- **Pillar 3: Context Engineering** - Managing cognitive load and information flow
-- **Pillar 4: Knowledge OS** - Git as institutional memory
+- **Pillar 1: Constraint-Based Engineering** - Start with limits, optimize within them
+- **Pillar 2: DevOps + SRE** - Operational rigor and reliability engineering
+- **Pillar 3: Learning Science** - How humans and systems acquire knowledge
+- **Pillar 4: Context Engineering** - Managing cognitive load and information flow
+- **Pillar 5: Knowledge OS** - Git as institutional memory
 
 **Why it matters:**
-These aren't arbitrary categories—they're the minimal set of perspectives needed to build reliable, learning, sustainable agent operations. Each pillar addresses a specific dimension of operational excellence.
+These aren't arbitrary categories—they're the minimal set of perspectives needed to build reliable, learning, sustainable knowledge work operations. Each pillar addresses a specific dimension of operational excellence.
 
 **Key insight:**
-AI agents aren't magic. They're software systems that deserve the same operational discipline as production infrastructure. The Four Pillars provide that discipline.
+Knowledge work isn't magic. It's a system that deserves the same operational discipline as production infrastructure. The Five Pillars provide that discipline.
 
 ---
 

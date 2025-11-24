@@ -1,8 +1,11 @@
 <div align="center">
 
-# 12-Factor AgentOps
+# 12-Factor AgentOps: The Knowledge OS Kernel
 
-**Operational principles for using AI agents reliably at scale.**
+**Operational principles for reliable knowledge work at scale.**
+
+> *These principles apply to ALL knowledge work, not just AI agents.*
+> *AI was the forcing function that made us formalize what should have been explicit all along.*
 
 [![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Version](https://img.shields.io/badge/Version-v1.0.0-blue.svg)](https://github.com/boshu2/12-factor-agentops/releases/tag/v1.0.0)
@@ -79,13 +82,36 @@ This framework adapts 12 operational principles from infrastructure operations i
 
 ## Who This Is For
 
-- **Solo developers** using Claude, ChatGPT, or other AI coding assistants
-- **Product teams** building AI-powered features that scale beyond MVP
-- **Platform teams** deploying agent-driven automation across infrastructure
-- **Enterprises** who need AI agents in customer-facing production systems
-- **Anyone** who wants AI to make you faster over time, not slower
+**Anyone doing knowledge work:**
 
-**What unites you:** You've hit the wall where "just prompt better" stops working. You need systematic operational approaches.
+- **Software engineers** using AI coding assistants
+- **Researchers** managing complex multi-phase projects
+- **Documentation teams** scaling content creation
+- **Product teams** building AI-powered features
+- **Platform teams** deploying agent-driven automation
+- **Anyone** who wants systematic approaches to intellectual work
+
+**The principles are universal.** AI just made them impossible to ignore.
+
+**What unites you:** You've hit the wall where "just work harder" stops working. You need systematic operational approaches.
+
+---
+
+## The Operating System Metaphor
+
+The 12 factors aren't just best practices — they're **kernel architecture** for knowledge work:
+
+| OS Component | Knowledge OS | Factor |
+|--------------|--------------|--------|
+| **File System** | Git (institutional memory) | I. Automated Tracking |
+| **Memory Manager** | Context window (40% rule) | II. Context Loading |
+| **Process Isolation** | Single-responsibility | III. Focused Agents |
+| **System Calls** | Validation gates | IV. Continuous Validation |
+| **Scheduler** | Task routing | VII. Smart Routing |
+
+> **Linux is the OS for compute. Knowledge OS is the OS for cognition.**
+
+See [docs/principles/knowledge-os.md](docs/principles/knowledge-os.md) for the complete mapping.
 
 ## The 12 Factors
 
