@@ -19,6 +19,50 @@
 
 ---
 
+## The FAAFO Philosophy (Why This Exists)
+
+**FAAFO** = Fast, Ambitious, Autonomous, Fun, Optionality
+
+**Origin:** [Gene Kim, AI Engineer Summit 2025](https://www.youtube.com/watch?v=vibe-coding) - "Vibe Coding: The Last Generation to Write Code by Hand"
+
+In 2023, I experienced 35% success rates with AI coding tools. Frustrating. Slow. Not fun. I believed developers deserved **FAAFO**:
+
+- **Fast** - Deliver value quickly without sacrificing quality
+- **Ambitious** - Tackle projects previously considered "impossible"
+- **Autonomous** - Minimal human intervention, high success rate
+- **Fun** - Building is enjoyable, not debugging hell
+- **Optionality** - Maintain choice and flexibility
+
+This belief drove me to find and apply **proven operational patterns** from giants:
+- [12-Factor App](https://12factor.net) (Heroku)
+- DevOps/SRE (Google, Netflix)
+- Learning Science (cognitive load research)
+- Context Engineering (40% threshold)
+
+**Result:** 35% → 95% success rate, 2.7-40x speedup, 1,175+ commits documenting the journey
+
+**Industry validation:** At the [AI Engineer Summit 2025](./docs/explanation/ai-summit-validation-2025.md), 22 technical leaders from Anthropic, OpenAI, Bloomberg, Google, McKinsey, and Stanford independently converged on the same patterns we'd been using in production for 1-2 years.
+
+### The Hierarchy
+
+```
+        ⭐ FAAFO (The WHY - North Star)
+   Fast, Ambitious, Autonomous, Fun, Optionality
+                    ↓
+        Four Pillars (The HOW - Technical Foundations)
+   DevOps/SRE, Learning Science, Context Engineering, Knowledge OS
+                    ↓
+        12-Factor AgentOps (The WHAT - Operational Patterns)
+   I-IV: Foundation → V-VIII: Operations → IX-XII: Improvement
+                    ↓
+        AI Workflows (The IMPLEMENTATION)
+   Code, automation, validation gates, pattern libraries
+```
+
+**[Read more about FAAFO →](./docs/explanation/faafo-north-star.md)**
+
+---
+
 ## The Driving Question
 
 > ### **How do we take AI agents from 80% reliable to production-grade without throwing away frameworks and rewriting from scratch?**
