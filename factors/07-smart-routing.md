@@ -572,9 +572,9 @@ Example: 10 tasks routed to cheap workflows instead of expensive = $50 saved
 
 ## Further Reading
 
-- **Learning Science Pillar**: [../foundations/four-pillars.md#pillar-2-learning-science](../foundations/four-pillars.md#pillar-2-learning-science)
-- **Law 1 (Extract Learnings)**: [../foundations/five-laws.md](../foundations/five-laws.md#law-1)
-- **Law 2 (Improve System)**: [../foundations/five-laws.md](../foundations/five-laws.md#law-2)
+- **Learning Science Pillar**: [../docs/principles/four-pillars.md#pillar-2-learning-science](../docs/principles/four-pillars.md#pillar-2-learning-science)
+- **Law 1 (Extract Learnings)**: [../docs/principles/five-laws.md](../docs/principles/five-laws.md#law-1)
+- **Law 2 (Improve System)**: [../docs/principles/five-laws.md](../docs/principles/five-laws.md#law-2)
 - **Pattern: Intelligent Routing**: [../patterns/intelligent-routing.md](../patterns/intelligent-routing.md)
 
 ---

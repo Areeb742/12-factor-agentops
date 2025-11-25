@@ -1,52 +1,86 @@
-# 12-Factor AgentOps Workflow
+# 12-Factor AgentOps Workflow (v2.0)
 
 **How to apply the 12 factors in practice using the slash command workflow.**
 
-This guide shows the operational workflow for reliable AI agent work: `/prime` → `/research` → `/plan` → `/implement` → `/learn` → repeat.
+This guide shows the operational workflow for reliable AI agent work: **Read primer** → `/research` → `/plan` → `/implement` → `validate` → `/learn` → repeat.
+
+---
+
+## Version 2.0 Changes
+
+**What changed:**
+- ✅ Removed `/prime` command - kernel files (CLAUDE.md, AGENTS.md) now act as primers
+- ✅ Validation is now continuous during `/implement` (not separate phase after)
+- ✅ Clearer separation: primer files provide context, commands execute work
+
+**Why we dropped `/prime`:**
+
+The `/prime` command was originally designed to route tasks and load initial context. However, we discovered that:
+
+1. **Documentation already provides routing** - CLAUDE.md and AGENTS.md files contain all routing logic (what to load, which agents to use, JIT loading patterns)
+2. **Redundant context loading** - `/prime` loaded 800-2k tokens, but kernel files already provide same context in 800 tokens
+3. **Extra command overhead** - Added complexity without adding value (just read the file instead)
+4. **Confusion about when to use** - Users unsure whether to run `/prime` or just start with `/research`
+
+**The solution:** Treat kernel files as **primers** - read them first, they tell you what to do next. No separate command needed.
+
+**Result:**
+- Simpler workflow (fewer commands to remember)
+- Clearer intent (documentation is the primer)
+- Same context budget (800 tokens either way)
+- Faster startup (no command execution overhead)
 
 ---
 
 ## The Workflow Loop
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│  /prime          /research         /plan          /implement    │
-│    ↓                ↓                ↓                ↓          │
-│  Setup          Research        Design         Execute         │
-│  Context        Problem         Solution       + Validate       │
-│                                                      ↓           │
-│                                                   /learn        │
-│                                                  Extract        │
-│                                                  Patterns       │
-│                                                      ↓           │
-│  └─────────────────────────────────────────────────┘           │
-│           (Repeat with learnings)                              │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  CLAUDE.md       /research        /plan         /implement       │
+│  AGENTS.md          ↓               ↓               ↓            │
+│     ↓           Research        Design         Execute          │
+│  Primer         Problem         Solution       + Validate        │
+│  (Read)                                          (continuous)    │
+│                                                      ↓            │
+│                                                  /learn          │
+│                                                 Extract          │
+│                                                 Patterns         │
+│                                                     ↓            │
+│  └────────────────────────────────────────────────┘             │
+│           (Repeat with learnings)                               │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 Each phase has **validation gates** before proceeding to the next phase. No proceeding without validation.
 
 ---
 
-## Phase 1: `/prime` - Prepare & Scope
+## Phase 0: Read CLAUDE.md / AGENTS.md - Prime Context
 
-**Purpose:** Set up context, scope the problem, prepare for research.
+**Purpose:** Load initial context, understand repository structure, select right approach.
 
 **What happens:**
+- Read kernel files (CLAUDE.md, AGENTS.md) - repository primers
+- Understand JIT loading strategy (what to load when)
+- Identify relevant specs, tools, patterns
 - Clear your context window (Factor II: Context Loading)
-- Define the problem statement
-- Identify constraints and success criteria
-- Prepare domain knowledge (Factor XII: Package Patterns)
+- Define the problem statement (based on primer guidance)
 
-**Output:** Problem statement + success criteria + context bundle
+**Key files to read:**
+- `CLAUDE.md` - Repository kernel (structure, quick actions, JIT pointers)
+- `AGENTS.md` - Agent catalog (if working with agents)
+- `.claude/CONSTITUTION.md` - Laws of an agent (if needed)
+- `.claude/AGENT_INTERACTION_STANDARDS.md` - Agent standards (if needed)
 
-**Validation gate:** Can you clearly articulate the problem in 1-2 sentences?
+**Output:** Clear understanding of repository context + what to load next + problem statement
+
+**Validation gate:** Do you know which docs to load for your specific task? Can you articulate the problem in 1-2 sentences?
 
 ---
 
-## Phase 2: `/research` - Deep Dive
+## Phase 1: `/research` - Deep Dive
 
 **Purpose:** Understand the problem domain deeply before designing a solution.
 
@@ -62,7 +96,7 @@ Each phase has **validation gates** before proceeding to the next phase. No proc
 
 ---
 
-## Phase 3: `/plan` - Design Solution
+## Phase 2: `/plan` - Design Solution
 
 **Purpose:** Design a detailed solution that follows the 12 factors.
 
@@ -79,7 +113,7 @@ Each phase has **validation gates** before proceeding to the next phase. No proc
 
 ---
 
-## Phase 4: `/implement` - Execute with Validation
+## Phase 3: `/implement` - Execute with Validation
 
 **Purpose:** Build the solution while validating each step.
 
@@ -95,7 +129,7 @@ Each phase has **validation gates** before proceeding to the next phase. No proc
 
 ---
 
-## Phase 5: `/learn` - Extract Patterns
+## Phase 4: `/learn` - Extract Patterns
 
 **Purpose:** Convert implementation experience into reusable knowledge.
 
@@ -126,7 +160,7 @@ The workflow loops. Each iteration:
 
 This example shows the full workflow applied to a real task: deploying and configuring a Redis Operator with custom CRD settings via Kustomization.
 
-### Phase 1: `/prime` - Prepare
+### Phase 0: Read CLAUDE.md - Primer
 
 **Problem Statement:**
 Deploy the Redis Operator to a Kubernetes cluster and configure a Redis instance using custom CRD, with cluster-specific overrides via Kustomization.
@@ -148,7 +182,7 @@ Deploy the Redis Operator to a Kubernetes cluster and configure a Redis instance
 
 ---
 
-### Phase 2: `/research` - Understand
+### Phase 1: `/research` - Understand
 
 **Research findings:**
 
@@ -174,7 +208,7 @@ Deploy the Redis Operator to a Kubernetes cluster and configure a Redis instance
 
 ---
 
-### Phase 3: `/plan` - Design
+### Phase 2: `/plan` - Design
 
 **Architecture:**
 
@@ -226,7 +260,7 @@ kustomization/
 
 ---
 
-### Phase 4: `/implement` - Execute with Validation
+### Phase 3: `/implement` - Execute with Validation
 
 #### Step 1: Create Base Structure
 
@@ -488,7 +522,7 @@ Kustomization enables environment-specific config without duplicating manifests.
 
 ---
 
-### Phase 5: `/learn` - Extract Patterns
+### Phase 4: `/learn` - Extract Patterns
 
 **What worked:**
 1. Kustomization base/overlay pattern is clean and maintainable
@@ -542,12 +576,13 @@ Each phase demonstrates the 12 factors in action:
 
 ### For Your Own Task
 
-1. **/prime:** Define problem, scope, success criteria
+1. **Read CLAUDE.md / AGENTS.md:** Load primer context, understand structure, define problem
 2. **/research:** Understand domain, find approaches, pick best
 3. **/plan:** Design solution, map to factors, plan validation
 4. **/implement:** Build with validation gates after each step
    - After each major step, validate before continuing
    - Commit with clear intent messages
+   - Validation is continuous throughout this phase
 5. **/learn:** Review, document patterns, update domain knowledge
 6. **Repeat:** Next task benefits from previous learnings
 
@@ -569,7 +604,7 @@ This workflow works for:
 - Debugging and incident response
 - Process improvement
 
-The pattern is consistent: prime → research → plan → implement (validate) → learn → repeat.
+The pattern is consistent: **Read primer** → `/research` → `/plan` → `/implement` (with continuous validation) → `/learn` → repeat.
 
 ---
 
@@ -582,8 +617,8 @@ Traditional "move fast and break things" fails with AI agents because:
 - Intent disappears (poor commit messages, no documentation)
 
 This workflow systematically addresses all five:
-- ✅ Validation gates (Phase 4: /implement with checks)
-- ✅ Pattern extraction (Phase 5: /learn)
+- ✅ Validation gates (Phase 3: /implement with continuous validation)
+- ✅ Pattern extraction (Phase 4: /learn)
 - ✅ Reusable knowledge (Factor XII: Package Patterns)
 - ✅ Documented intent (Factor I: Automated Tracking)
 - ✅ Continuous improvement (Factor X: Small Iterations)

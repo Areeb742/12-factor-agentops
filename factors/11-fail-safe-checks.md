@@ -630,8 +630,8 @@ class GuardrailExemption:
 
 ## Further Reading
 
-- **DevOps + SRE Pillar**: [../foundations/four-pillars.md#pillar-1-devops--sre](../foundations/four-pillars.md#pillar-1-devops--sre)
-- **Five Laws**: [../foundations/five-laws.md](../foundations/five-laws.md)
+- **DevOps + SRE Pillar**: [../docs/principles/four-pillars.md#pillar-1-devops--sre](../docs/principles/four-pillars.md#pillar-1-devops--sre)
+- **Five Laws**: [../docs/principles/five-laws.md](../docs/principles/five-laws.md)
 - **Factor IV: Continuous Validation**: [./04-validation-gates-before-execution.md](./04-validation-gates-before-execution.md)
 - **Policy as Code**: [Open Policy Agent](https://www.openpolicyagent.org/)
 - **Poka-Yoke**: [Wikipedia: Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)

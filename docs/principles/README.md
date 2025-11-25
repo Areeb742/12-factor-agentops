@@ -51,7 +51,7 @@ You can't eliminate constraints. You can only architect optimally within them. T
 
 ---
 
-### [Evolution of 12-Factor](../docs/foundations/evolution-of-12-factor.md)
+### [Evolution of 12-Factor](../docs/principles/evolution-of-12-factor.md)
 
 **Read time:** 12 minutes
 **When to read:** Understanding how this framework relates to the original 12-Factor App
@@ -69,7 +69,7 @@ This framework didn't emerge in a vacuum—it's the evolution of proven cloud-na
 **Key insight:**
 The original 12-Factor App, 12-Factor Agents (Dex Horthy), and 12-Factor AgentOps are complementary frameworks operating at different layers of the stack. You need all three to succeed with AI in production.
 
-**See also:** [Comparison Table](../docs/foundations/comparison-table.md) for detailed factor-by-factor mapping
+**See also:** [Comparison Table](../docs/principles/comparison-table.md) for detailed factor-by-factor mapping
 
 ---
 

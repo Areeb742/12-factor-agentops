@@ -485,7 +485,7 @@ class BundleLoader:
 
 ## Further Reading
 
-- **Context Engineering Foundation**: [../foundations/context-engineering.md](../foundations/context-engineering.md)
+- **Context Engineering Foundation**: [../docs/principles/context-engineering.md](../docs/principles/context-engineering.md)
 - **Factor II (40% Rule)**: [./02-fresh-context-windows.md](./02-fresh-context-windows.md)
 - **Pattern: Context Bundles**: [../patterns/context-bundles.md](../patterns/context-bundles.md)
 

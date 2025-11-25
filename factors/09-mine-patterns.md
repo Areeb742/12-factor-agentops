@@ -578,9 +578,9 @@ Evidence: Replaced by superior pattern
 
 ## Further Reading
 
-- **Knowledge OS Pillar**: [../foundations/knowledge-os.md](../foundations/knowledge-os.md)
-- **Law 1 (Extract Learnings)**: [../foundations/five-laws.md](../foundations/five-laws.md#law-1)
-- **Law 5 (Share Patterns)**: [../foundations/five-laws.md](../foundations/five-laws.md#law-5)
+- **Knowledge OS Pillar**: [../docs/principles/knowledge-os.md](../docs/principles/knowledge-os.md)
+- **Law 1 (Extract Learnings)**: [../docs/principles/five-laws.md](../docs/principles/five-laws.md#law-1)
+- **Law 5 (Share Patterns)**: [../docs/principles/five-laws.md](../docs/principles/five-laws.md#law-5)
 - **Pattern Catalog**: [../patterns/README.md](../patterns/README.md)
 - **Pattern Languages (Christopher Alexander)**: [A Pattern Language (1977)](https://en.wikipedia.org/wiki/A_Pattern_Language)
 

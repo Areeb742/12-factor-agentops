@@ -51,7 +51,7 @@ The 12-Factor AgentOps factors extend the proven [12-Factor App](https://12facto
 - Operations must work across **constrained environments** (air-gapped, edge, cloud)
 - Autonomous decisions need **governance boundaries**
 
-**For the complete evolution story** showing how each original factor evolved for AI applications and operations, see [docs/foundations/evolution-of-12-factor.md](../docs/foundations/evolution-of-12-factor.md).
+**For the complete evolution story** showing how each original factor evolved for AI applications and operations, see [do../docs/principles/evolution-of-12-factor.md](../do../docs/principles/evolution-of-12-factor.md).
 
 ---
 
@@ -122,7 +122,7 @@ The Twelve Factors rest on a philosophical foundation:
 3. **Context Engineering**: Manage cognitive load to prevent collapse
 4. **Knowledge OS**: Git as institutional memory
 
-**[Deep dive →](../foundations/four-pillars.md)**
+**[Deep dive →](../docs/principles/four-pillars.md)**
 
 ### Five Laws
 1. **ALWAYS Extract Learnings**: Patterns are valuable
@@ -131,7 +131,7 @@ The Twelve Factors rest on a philosophical foundation:
 4. **ALWAYS Validate Before Execute**: Prevention beats recovery
 5. **ALWAYS Share Patterns Publicly**: Build collective knowledge
 
-**[Deep dive →](../foundations/five-laws.md)**
+**[Deep dive →](../docs/principles/five-laws.md)**
 
 ---
 

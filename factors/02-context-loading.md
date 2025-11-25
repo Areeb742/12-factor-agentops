@@ -860,7 +860,7 @@ From industry leaders:
 
 ## Further Reading
 
-- **Context Engineering Foundation**: [../foundations/context-engineering.md](../foundations/context-engineering.md)
+- **Context Engineering Foundation**: [../docs/principles/context-engineering.md](../docs/principles/context-engineering.md)
 - **Factor VII: Resume Work**: [./06-session-continuity-via-bundles.md](./06-session-continuity-via-bundles.md)
 - **Pattern: Phase-Based Workflow**: [../patterns/phase-based-workflow.md](../patterns/phase-based-workflow.md)
 - **12-Factor Agents - Original Content**: [Factor 3: Own Your Context Window](https://github.com/humanlayer/12-factor-agents/blob/main/content/factor-03-own-your-context-window.md)

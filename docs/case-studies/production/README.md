@@ -1443,8 +1443,8 @@ Agent: "Fetching current Kubernetes documentation..."
 
 1. **Read framework (2 hours):**
    - [README.md](../../README.md) - Overview
-   - [Four Pillars](../../foundations/four-pillars.md) - Philosophy
-   - [Five Laws](../../foundations/five-laws.md) - Principles
+   - [Five Pillars](../../docs/principles/five-pillars.md) - Philosophy
+   - [Five Laws](../../docs/principles/five-laws.md) - Principles
 
 2. **Set up .claude/ (30 minutes):**
    - Use Template 1 (basic repository setup)
