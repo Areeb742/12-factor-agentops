@@ -97,7 +97,91 @@ This framework doesn't invent new principles. It **adapts proven operational pat
 
 ---
 
-### 3. Learning Science (Cognitive Psychology)
+### 3. Vibe Coding (Gene Kim & Steve Yegge, 2025)
+
+**Link:** https://www.youtube.com/watch?v=vibe-coding
+
+**Original focus:** AI-assisted development transformation, developer experience, operational patterns for "head chef" orchestration
+
+**Why it's a giant:** Gene Kim (Phoenix Project, DevOps Handbook) brings decades of operational wisdom to AI development. Steve Yegge (Google, Amazon) brings platform engineering experience. Together: Most comprehensive research on AI-assisted development patterns.
+
+#### Their Framework
+
+**The Three Developer Loops:**
+
+| Loop | Timescale | Focus |
+|------|-----------|-------|
+| **Inner Loop** | Seconds-minutes | Direct AI collaboration, fast feedback |
+| **Middle Loop** | Hours-days | Multi-agent coordination, context management |
+| **Outer Loop** | Weeks-months | Architecture, organizational transformation |
+
+**FAAFO Philosophy:**
+
+| Dimension | Gene Kim's Definition |
+|-----------|----------------------|
+| **Fast** | Accelerated development (4,176 lines in 4 days = 10x) |
+| **Ambitious** | Impossible → feasible (complex projects as solo dev) |
+| **Autonomous** | Minimal intervention, high success (20-30% productivity gains) |
+| **Fun** | Rediscover joy, flow states (50% more "Happy Time") |
+| **Optionality** | Explore in parallel (120x increase in explorable options) |
+
+**Failure Patterns Catalog:**
+
+| Pattern | Loop | Severity |
+|---------|------|----------|
+| "Tests Passing" Lie | Inner | High |
+| Context Amnesia | Inner | Medium |
+| Eldritch Code Horror | Middle | Critical |
+| Agent Workspace Collision | Middle | High |
+| Bridge Torching (API breaks) | Outer | Critical |
+| Repository Deletion | Outer | Critical |
+
+#### Our Adaptation
+
+**What we kept:**
+- **Three Loops framework** → Perfect mapping to our 12 Factors
+- **FAAFO as north star** → We independently discovered, Gene named it
+- **Failure pattern thinking** → We map to violated AgentOps factors
+- **Prevention/Detection/Correction** → Core to our operational model
+
+**What we added:**
+- **Production validation** → 2 years, 95% success rate, 1,175+ commits
+- **Operational discipline** → How to achieve FAAFO reliably (not just describe it)
+- **Factor-based diagnosis** → Each failure maps to violated factor
+- **Platform engineering proof** → 1 developer = whole team
+
+**Why this works:**
+- Gene provides **vision and research** (what elite orgs achieve)
+- We provide **operational patterns** (how to achieve it reliably)
+- His framework **validates our approach** (independent convergence)
+- Our production data **proves his research** (2 years in production)
+
+**The synthesis:**
+
+```
+Gene Kim's Vibe Coding
+     ↓
+  Vision: 10-16x productivity possible
+  Research: Here's what works (and fails)
+  Framework: Three Loops + FAAFO
+     ↓
+12-Factor AgentOps
+     ↓
+  Discipline: How to achieve it safely
+  Patterns: Map factors to loops
+  Validation: 95% success rate proven
+     ↓
+Together: Complete Playbook
+```
+
+**Our positioning:**
+> "Vibe Coding shows the promise. 12-Factor AgentOps shows how to deliver it safely in production."
+
+**Not competing, completing.**
+
+---
+
+### 4. Learning Science (Cognitive Psychology)
 
 **Original focus:** How humans acquire, retain, and apply knowledge
 

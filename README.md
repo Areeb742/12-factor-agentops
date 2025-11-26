@@ -8,7 +8,7 @@
 > *AI was the forcing function that made us formalize what should have been explicit all along.*
 
 [![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-v1.0.0-blue.svg)](https://github.com/boshu2/12-factor-agentops/releases/tag/v1.0.0)
+[![Version](https://img.shields.io/badge/Version-v2.0.0-blue.svg)](https://github.com/boshu2/12-factor-agentops/releases/tag/v2.0.0)
 [![GitHub Stars](https://img.shields.io/github/stars/boshu2/12-factor-agentops?style=social)](https://github.com/boshu2/12-factor-agentops)
 
 ![12-Factor AgentOps Landscape](./docs/assets/12-factor-landscape.svg)
@@ -49,8 +49,8 @@ This belief drove me to find and apply **proven operational patterns** from gian
         ⭐ FAAFO (The WHY - North Star)
    Fast, Ambitious, Autonomous, Fun, Optionality
                     ↓
-        Four Pillars (The HOW - Technical Foundations)
-   DevOps/SRE, Learning Science, Context Engineering, Knowledge OS
+        Five Pillars (The HOW - Technical Foundations)
+   DevOps/SRE, Vibe Coding, Learning Science, Context Engineering, Knowledge OS
                     ↓
         12-Factor AgentOps (The WHAT - Operational Patterns)
    I-IV: Foundation → V-VIII: Operations → IX-XII: Improvement
@@ -60,6 +60,53 @@ This belief drove me to find and apply **proven operational patterns** from gian
 ```
 
 **[Read more about FAAFO →](./docs/explanation/faafo-north-star.md)**
+
+---
+
+## Vibe Coding + 12-Factor AgentOps
+
+### Two Frameworks, One Complete System
+
+**[Vibe Coding](https://www.youtube.com/watch?v=vibe-coding)** (Gene Kim & Steve Yegge)
+- The **vision**: Developers evolving from "line cooks" to "head chefs"
+- The **promise**: 10-16x productivity through AI collaboration
+- The **warning**: Without discipline → eldritch code horrors, bridge torching, context amnesia
+
+**12-Factor AgentOps** (This framework)
+- The **operational discipline**: Production-proven patterns (2 years, 95% success rate)
+- The **safety net**: How to get FAAFO benefits without the chaos
+- The **implementation**: Platform engineering proof (1 developer = whole team)
+
+### The Synthesis
+
+> *"Vibe Coding shows the promise. 12-Factor AgentOps shows how to deliver it safely in production."*
+
+Gene Kim's research documents what elite organizations achieve with AI. Our framework provides the operational patterns to achieve it reliably. Together: Vision + Execution = Complete playbook.
+
+### The Three Developer Loops
+
+Gene Kim's framework maps perfectly to our 12 Factors:
+
+| Loop | Timescale | AgentOps Factors | Production Safety |
+|------|-----------|-----------------|-------------------|
+| **Inner Loop**<br>Immediate coding | Seconds-minutes | 1: Fast Feedback<br>5: Testing First<br>6: Validation | Catch "tests passing" lies<br>Prevent context amnesia<br>Stop debug spirals |
+| **Middle Loop**<br>Multi-agent work | Hours-days | 3: Autonomous Agents<br>9: Modularity<br>10: Context Windows | Prevent eldritch horrors<br>Manage workspace collisions<br>Coordinate agents |
+| **Outer Loop**<br>Architecture/org | Weeks-months | 2: Disposability<br>8: Org Transformation<br>11: Dev/Prod Parity | Stop bridge torching<br>Scale organization<br>Recover from disasters |
+
+**[Read comprehensive integration guide →](./docs/explanation/vibe-coding-integration.md)**
+
+### Origin Story: Full Circle
+
+**The Through-Line:**
+- **2013-2023:** Phoenix Project shaped my DevOps career
+- **2023:** AI tools frustration (35% success rate)
+- **2023-2024:** Applied DevOps principles → 95% success rate
+- **Nov 2025:** Gene Kim's Vibe Coding validates my patterns
+- **2025:** v2.0 - Explicit integration
+
+**Result:** Gene's work guided me → My work validates his research → Together we provide the complete playbook
+
+**[Read full Phoenix Project lineage →](./docs/explanation/phoenix-project-lineage.md)**
 
 ---
 

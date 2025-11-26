@@ -4,7 +4,11 @@
 
 **Origin:** [Gene Kim, AI Engineer Summit 2025](https://www.youtube.com/watch?v=vibe-coding) - "Vibe Coding: The Last Generation to Write Code by Hand"
 
-**Our Discovery:** Independently discovered 2023-2024 through production frustration → experimentation → pattern codification
+**The Term:** Gene Kim coined "FAAFO" to describe the psychological state developers experience with effective AI tooling. This term perfectly captures what we had been chasing.
+
+**Our Discovery:** Independently discovered the **concept** 2023-2024 through production frustration → experimentation → pattern codification. We were pursuing FAAFO before we knew Gene had named it.
+
+**Attribution:** "FAAFO" term → Gene Kim. The underlying drive for this experience → our independent discovery. Convergent evolution.
 
 ---
 
