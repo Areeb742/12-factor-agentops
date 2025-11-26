@@ -1,95 +1,171 @@
-# Deep Dives & Extensions
+# Documentation
 
-**Core methodology:** [README.md](../README.md) → [Workflow Guide](tutorials/workflow-guide.md) → [factors/](../factors/)
+**Welcome to 12-Factor AgentOps documentation!**
 
-**This directory contains** optional deep dives for those who want to understand the philosophy and research behind the framework.
-
----
-
-## What's Here
-
-### Principles (The Philosophy)
-**Location:** `principles/`
-
-The "why" behind the factors:
-- **[Five Laws](principles/five-laws.md)** - Mandatory operational principles
-- **[Four Pillars](principles/four-pillars.md)** - DevOps+SRE, Learning Science, Context Engineering, Knowledge OS
-- **[Context Engineering](principles/context-engineering.md)** - The 40% rule and cognitive load management
-- **[Knowledge OS](principles/knowledge-os.md)** - Git as institutional memory
-- **[Evolution of 12-Factor](principles/evolution-of-12-factor.md)** - From cloud apps to AI agents
-
-**Read if:** You want to understand the philosophical foundation
-
-### Domain Guides (v2.0 - Coming Soon)
-**Location:** `domain-guides/`
-
-How to apply 12-Factor AgentOps in specific contexts:
-- DevOps & Infrastructure
-- Software Development
-- Data Science & Analytics
-- Solo Development
-
-*Note: Domain guides are planned for v2.0 based on community implementations*
-
-### Research (v2.0 - Coming Soon)
-**Location:** `research/`
-
-The research foundations and empirical validation.
-
-*Note: Research validation and case studies are planned for v2.0*
-
-### Advanced Patterns (v2.0 - Coming Soon)
-**Location:** `advanced/`
-
-Deep dives on complex patterns like multi-agent orchestration.
-
-*Note: Advanced patterns are planned for v2.0 based on production usage*
-
-### Case Studies (v2.0 - Coming Soon)
-**Location:** `case-studies/`
-
-Real production examples and metrics.
-
-*Note: Case studies will be collected from community implementations for v2.0*
+This documentation follows the [Di\u00e1taxis](https://diataxis.fr/) framework: **Tutorials, How-To Guides, Reference, Explanation**
 
 ---
 
-## How to Navigate
+## 🚀 Start Here
 
-**Start simple (1.0.0 core):**
-1. Read [README.md](../README.md) - Understand what this is (10 min)
-2. Read [Workflow Guide](tutorials/workflow-guide.md) - Learn the workflow (20 min)
-3. Read [factors/](../factors/) - Deep dive on any factor (15 min each)
+**New to 12-Factor AgentOps?**
+→ [Getting Started Guide](./getting-started/) - Choose your path (15 min - 1 week)
 
-**Go deeper (optional):**
-4. Browse `principles/` - Understand the philosophy (1+ hours)
-5. Contribute - Share your implementation and learnings
+**Want FAAFO immediately?**
+→ [Quick Start](./getting-started/quick-start.md) - 15 minutes to first workflow
 
-**For different goals:**
-- **"I want the methodology"** → Start with README + WORKFLOW
-- **"I want the philosophy"** → Read `principles/`
-- **"I want to contribute"** → Implement, measure, share results
+**Solo developer?**
+→ [Solo Developer Guide](./getting-started/solo-developer.md) - 35% → 95% success rate
 
 ---
 
-## Contributing
+## 📚 Documentation by Type (Di\u00e1taxis)
 
-**For 1.0.0, we're seeking:**
-- Real implementations using the workflow
-- Before/after metrics (reliability, velocity)
-- Patterns discovered through usage
-- Improvements to the core methodology
+### 🎓 Tutorials (Learning-Oriented)
+**Step-by-step learning paths for beginners**
 
-**For v2.0, we'll add:**
-- Domain-specific guides
-- Advanced patterns
-- Case studies
-- Research validation
-
-**See:** [CONTRIBUTING.md](../CONTRIBUTING.md) for process
+- [Getting Started](./getting-started/) - Choose your journey
+  - [Quick Start](./getting-started/quick-start.md) - 15 min to FAAFO
+  - [Solo Developer](./getting-started/solo-developer.md) - 35% → 95% success rate
+- [Complete Workflow Guide](./tutorials/workflow-guide.md) - Research → Plan → Implement → Learn
 
 ---
 
-**Remember:** The core methodology is simple—12 factors and a workflow. This directory provides optional depth on the philosophy behind them.
+### 🛠️ How-To Guides (Task-Oriented)
+**Problem-solving recipes for specific tasks**
 
-Start with README + WORKFLOW. Come here when you want to understand why it works.
+- [How-To Index](./how-to/) - All guides organized by task
+  - [Implement Validation Gates](./how-to/README.md#validation--quality) - Factor IV
+  - [Prevent Context Collapse](./how-to/README.md#context-management) - Factor II
+  - [Build Pattern Library](./how-to/README.md#pattern-libraries) - Factor XII
+  - [Track Success Rates](./how-to/README.md#measurement--observability) - Factor V
+  - [Resume Work Across Sessions](./how-to/README.md#session-management) - Factor VI
+  - [And 20+ more...](./how-to/)
+
+---
+
+### 📖 Reference (Information-Oriented)
+**Quick lookup for facts, APIs, and details**
+
+- [Reference Index](./reference/) - Quick lookup
+  - [12 Factors Table](./reference/README.md#the-12-factors) - All factors at a glance
+  - [FAAFO Dimensions](./reference/README.md#faafo-dimensions) - Fast, Ambitious, Autonomous, Fun, Optionality
+  - [Four Pillars](./reference/README.md#four-pillars) - DevOps, Learning Science, Context Engineering, Knowledge OS
+  - [Five Laws](./reference/README.md#five-laws) - Mandatory principles
+  - [Key Metrics](./reference/README.md#key-metrics) - Success rate, speedup, FAAFO score
+  - [Common Commands](./reference/README.md#common-commands) - Make targets, git workflow
+  - [Glossary](./reference/README.md#glossary) - Terms and definitions
+
+---
+
+### 💡 Explanation (Understanding-Oriented)
+**Conceptual deep dives and background**
+
+- [FAAFO North Star](./explanation/faafo-north-star.md) ⭐ - Why this exists (the driving belief)
+- [Standing on Giants](./explanation/standing-on-giants.md) - How we adapted 12-Factor App, DevOps, Learning Science
+- [AI Summit Validation 2025](./explanation/ai-summit-validation-2025.md) - Industry validation from 22 technical leaders
+- [Four Pillars](./principles/five-pillars.md) - Technical foundations (detailed)
+- [Five Laws](./principles/five-laws.md) - Mandatory operational principles
+- [Context Engineering](./principles/context-engineering.md) - The 40% rule explained
+- [Knowledge OS](./principles/knowledge-os.md) - Git as institutional memory
+- [Constraint-Based Engineering](./principles/constraint-based-engineering.md) - Designing within limits
+- [Scientific Foundation](./scientific-foundation.md) - Research backing the patterns
+- [Production Metrics](./production-metrics.md) - Real-world results (35% → 95%, 2.7-40x speedup)
+
+---
+
+### 📊 Case Studies
+**Real-world implementations and outcomes**
+
+- [Production Case Studies](./case-studies/production/) - How it works in practice
+  - [Factor Mapping](./case-studies/production/factor-mapping.md)
+  - [Metrics](./case-studies/production/metrics.md)
+
+---
+
+### 🎯 Domain-Specific
+**Specialized guides for specific domains**
+
+- [Platform Engineering Agent](./domain-guides/platform-engineering-agent.md)
+
+---
+
+## 🗺️ Navigation by Goal
+
+### "I want to start using this"
+→ [Getting Started](./getting-started/) → Pick your path
+
+### "I have a specific problem to solve"
+→ [How-To Guides](./how-to/) → Find your task
+
+### "I need to look something up quickly"
+→ [Reference](./reference/) → Quick lookup
+
+### "I want to understand why this works"
+→ [Explanation](./explanation/) → Deep dives
+
+### "I want to see real examples"
+→ [Case Studies](./case-studies/) → Production stories
+
+---
+
+## 🔍 Find by Factor
+
+Looking for documentation about a specific factor?
+
+| Factor | Getting Started | How-To | Reference | Explanation |
+|--------|-----------------|--------|-----------|-------------|
+| **I: Automated Tracking** | [Quick Start](./getting-started/quick-start.md#step-1) | Git Workflow | [Factor I](../factors/01-automated-tracking.md) | [Knowledge OS](./principles/knowledge-os.md) |
+| **II: Context Loading** | [Quick Start](./getting-started/quick-start.md#add-factor-ii) | [Prevent Collapse](./how-to/README.md#context-management) | [Factor II](../factors/02-context-loading.md) | [Context Engineering](./principles/context-engineering.md) |
+| **III: Focused Agents** | [Solo Dev](./getting-started/solo-developer.md#factor-iii) | Multi-Phase | [Factor III](../factors/03-focused-agents.md) | [Learning Science](./principles/five-pillars.md) |
+| **IV: Continuous Validation** | [Quick Start](./getting-started/quick-start.md#step-2) | [Validation Gates](./how-to/README.md#validation--quality) | [Factor IV](../factors/04-continuous-validation.md) | [DevOps/SRE](./principles/five-pillars.md) |
+| **V: Measure Everything** | [Solo Dev](./getting-started/solo-developer.md#factor-v) | [Track Success](./how-to/README.md#measurement--observability) | [Factor V](../factors/05-measure-everything.md) | [Metrics](./production-metrics.md) |
+| **VI: Resume Work** | [Solo Dev](./getting-started/solo-developer.md#factor-vi) | [Session Notes](./how-to/README.md#session-management) | [Factor VI](../factors/06-resume-work.md) | [Context Engineering](./principles/context-engineering.md) |
+| **VII-XII** | [Workflow Guide](./tutorials/workflow-guide.md) | [How-To](./how-to/) | [Factors](../factors/) | [Pillars](./principles/five-pillars.md) |
+
+---
+
+## 📈 Find by FAAFO Dimension
+
+Looking to achieve a specific FAAFO goal?
+
+| FAAFO Goal | Start Here | Relevant Factors |
+|------------|------------|------------------|
+| **Fast** | [Validation Gates](./how-to/README.md#validation--quality) | II, IV, V |
+| **Ambitious** | [Pattern Library](./how-to/README.md#pattern-libraries) | IX, XII |
+| **Autonomous** | [Solo Developer Guide](./getting-started/solo-developer.md) | I, III, IV, VII, VIII |
+| **Fun** | [Quick Start](./getting-started/quick-start.md) | IV, XI |
+| **Optionality** | [Context Management](./how-to/README.md#context-management) | II, VI |
+
+---
+
+## 🆘 Common Questions
+
+**"Where do I start?"**
+→ [Getting Started](./getting-started/) - Choose based on your role and goals
+
+**"How do I do X?"**
+→ [How-To Guides](./how-to/) - Task-oriented recipes
+
+**"What does Y mean?"**
+→ [Reference](./reference/) - Quick lookup and glossary
+
+**"Why does this work?"**
+→ [Explanation](./explanation/) - Conceptual understanding
+
+**"Does this actually work in production?"**
+→ [Production Metrics](./production-metrics.md) + [Case Studies](./case-studies/)
+
+---
+
+## 🔗 External Resources
+
+- **Main README:** [../README.md](../README.md)
+- **The 12 Factors:** [../factors/](../factors/)
+- **12-Factor App (original):** https://12factor.net
+- **Gene Kim (FAAFO):** [AI Engineer Summit 2025](./explanation/faafo-north-star.md)
+- **Diátaxis Framework:** https://diataxis.fr/
+
+---
+
+**Choose your path and get started! 🚀**
