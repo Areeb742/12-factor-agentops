@@ -1,6 +1,16 @@
+<div align="center">
+
 # 12-Factor AgentOps
 
 **Operational principles for reliable AI agents.**
+
+[![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Version](https://img.shields.io/badge/Version-v2.0.0-blue.svg)](https://github.com/boshu2/12-factor-agentops/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/boshu2/12-factor-agentops?style=social)](https://github.com/boshu2/12-factor-agentops)
+
+![12-Factor AgentOps Landscape](./docs/assets/12-factor-landscape.svg)
+
+</div>
 
 ---
 
@@ -54,11 +64,18 @@ But infrastructure operations patterns do. The answer is 20 years of DevOps/SRE 
 | **[XI. Fail-Safe Checks](./factors/11-fail-safe-checks.md)** | Prevent repeating mistakes. Add guardrails. |
 | **[XII. Package Patterns](./factors/12-package-patterns.md)** | Bundle what works. Reuse it. |
 
+<div align="center">
+
+![How the Factors Work Together](./docs/assets/workflow-flow.svg)
+
+</div>
+
 ---
 
 ## Getting Started
 
 Pick a factor that matches your pain point:
+
 - **Context problems?** Start with [Factor II: Context Loading](./factors/02-context-loading.md)
 - **Reliability issues?** Start with [Factor IV: Continuous Validation](./factors/04-continuous-validation.md)
 - **No visibility?** Start with [Factor V: Measure Everything](./factors/05-measure-everything.md)
@@ -75,4 +92,8 @@ Or see the [Workflow Guide](./docs/tutorials/workflow-guide.md) for the full pic
 
 ---
 
+<div align="center">
+
 **License:** CC BY-SA 4.0 (content) / Apache 2.0 (code)
+
+</div>
