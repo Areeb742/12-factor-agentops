@@ -35,6 +35,16 @@ But infrastructure operations patterns do. The answer is 20 years of DevOps/SRE 
 
 ---
 
+## Quick Load (AI Sessions)
+
+| Document | Tokens | Coverage | Use For |
+|----------|--------|----------|---------|
+| **[docs/00-SUMMARY.md](./docs/00-SUMMARY.md)** | ~10k | 99% | Fast context loading, AI sessions, quick reference |
+
+The summary compresses the full corpus into ~10k tokens with zero essential loss. **Start here for AI-assisted work.**
+
+---
+
 ## The 12 Factors
 
 ### Foundation (I-IV)
@@ -79,6 +89,8 @@ Pick a factor that matches your pain point:
 - **Context problems?** Start with [Factor II: Context Loading](./factors/02-context-loading.md)
 - **Reliability issues?** Start with [Factor IV: Continuous Validation](./factors/04-continuous-validation.md)
 - **No visibility?** Start with [Factor V: Measure Everything](./factors/05-measure-everything.md)
+- **What can go wrong?** See [The 12 Failure Patterns](./docs/reference/failure-patterns.md)
+- **Enterprise validation?** See [Case Studies](./docs/case-studies/enterprise-validation.md)
 
 Or see the [Workflow Guide](./docs/tutorials/workflow-guide.md) for the full picture.
 

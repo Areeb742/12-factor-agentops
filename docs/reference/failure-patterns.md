@@ -1,6 +1,18 @@
-# Vibe Coding Failure Patterns Catalog
+# The 12 Failure Patterns Catalog
 
-**Complete catalog of AI-assisted development failure modes mapped to violated AgentOps factors.**
+**Complete catalog of AI-assisted development failure modes mapped to 12-Factor AgentOps prevention.**
+
+**Source:** Gene Kim & Steve Yegge, *Vibe Coding* (IT Revolution Press, 2025)
+
+---
+
+## Severity Legend
+
+| Level | Impact | Patterns |
+|-------|--------|----------|
+| **CRITICAL** | Months of work lost | Eldritch Horror, Bridge Torching, Repo Deletion |
+| **HIGH** | Days-weeks of rework | Tests Lie, Debug Spiral, Collisions, Deadlock, Gridlock, Stewnami |
+| **MEDIUM** | Hours of lost context | Context Amnesia, Instruction Drift, Memory Decay |
 
 ---
 
@@ -34,7 +46,7 @@
 - Confabulation of success based on code structure, not execution
 - No actual test harness invoked
 
-**Violated Factor:** **Factor 6 (Validation)**
+**Violated Factor:** **Factor IV (Continuous Validation)**
 
 **Prevention:**
 - Always run tests independently (don't trust AI claims)
@@ -88,7 +100,7 @@ Output: FAILED tests/test_calculate.py::test_sum - NameError: name 'sum_values' 
 - Performance degrades non-linearly (cliff, not slope)
 - AI loses track of earlier conversation
 
-**Violated Factor:** **Factor 10 (Context Windows)**
+**Violated Factor:** **Factor II (Context Loading)**
 
 **Prevention:**
 - Monitor context utilization actively (estimate tokens used)
@@ -143,7 +155,7 @@ AI: "What caching solution should we use?"
 - Guessing rather than analyzing
 - Each iteration adds more logging, no fix
 
-**Violated Factor:** **Factor 1 (Fast Feedback Loops)**
+**Violated Factor:** **Factor VII (Smart Routing)**
 
 **Prevention:**
 - Use debugger first (breakpoint at error location)
@@ -202,7 +214,7 @@ Error: Still occurs
 - AI loses track of change intent partway through
 - Result: Incomplete refactor, broken state
 
-**Violated Factor:** **Factor 9 (Modularity)** + **Factor 10 (Context Windows)**
+**Violated Factor:** **Factor X (Small Iterations)** + **Factor II (Context Loading)**
 
 **Prevention:**
 - Keep files <500 lines (modularity constraint)
@@ -243,7 +255,7 @@ If file too large:
 - Each fix breaks something else
 - No holistic understanding of codebase
 
-**Violated Factor:** **Factor 1 (Fast Feedback)** + **Factor 6 (Validation)**
+**Violated Factor:** **Factor IV (Continuous Validation)** + **Factor X (Small Iterations)**
 
 **Prevention:**
 - Validate code structure before committing
@@ -285,7 +297,7 @@ After AI edit:
 - No modularity constraints enforced
 - Extended session without architectural oversight
 
-**Violated Factor:** **Factor 9 (Modularity)**
+**Violated Factor:** **Factor X (Small Iterations)**
 
 **Prevention:**
 - Set explicit modularity constraints upfront:
@@ -346,7 +358,7 @@ def process_everything(data, config, db, cache, logger, metrics, ...):
 - Agents overlap in scope
 - No explicit handoff protocols
 
-**Violated Factor:** **Factor 3 (Autonomous Agents)**
+**Violated Factor:** **Factor III (Focused Agents)** + **Factor VII (Smart Routing)**
 
 **Prevention:**
 - Assign agents to specific domains (Agent A = frontend, B = backend, C = DB)
@@ -399,7 +411,7 @@ Git: CONFLICT (content): Merge conflict in src/api/routes.py
 - Circular dependencies (A needs B, B needs A)
 - No tracer bullet to break cycle
 
-**Violated Factor:** **Factor 9 (Modularity)** + poor task decomposition
+**Violated Factor:** **Factor X (Small Iterations)** + poor task decomposition
 
 **Prevention:**
 - Implement tracer bullet first (vertical slice end-to-end)
@@ -439,7 +451,7 @@ Before parallel agents:
 - Each agent has different view of system
 - State synchronization not implemented
 
-**Violated Factor:** **Factor 10 (Context Windows)** + multi-agent coordination
+**Violated Factor:** **Factor II (Context Loading)** + multi-agent coordination
 
 **Prevention:**
 - Shared state file (read by all agents)
@@ -472,7 +484,7 @@ Before parallel agents:
 - No backward compatibility validation
 - Missing contract testing
 
-**Violated Factor:** **Factor 11 (Dev/Prod Parity)**
+**Violated Factor:** **Factor IV (Continuous Validation)** + **Factor VIII (Human Validation)**
 
 **Prevention:**
 - API compatibility tests in CI/CD pipeline
@@ -534,7 +546,7 @@ result = calculate(10)  # TypeError: missing required argument 'multiplier'
 - Over-optimizes for "cleanliness"
 - Deletes branches with unmerged work
 
-**Violated Factor:** **Factor 1 (Automated Tracking)**
+**Violated Factor:** **Factor VIII (Human Validation)** + **Factor I (Automated Tracking)**
 
 **Prevention:**
 - Protected branches policy (can't delete main, develop, production)
@@ -581,7 +593,7 @@ Git hook:
 - Every change requires committee approval
 - Manual review slower than AI generation
 
-**Violated Factor:** **Factor 8 (Organizational Transformation)**
+**Violated Factor:** **Factor IV (Continuous Validation)** + **Factor V (Measure Everything)**
 
 **Prevention:**
 - Implement fast lane for low-risk changes
@@ -628,7 +640,7 @@ Else:
 - Changes deployed directly to production
 - Missing integration tests
 
-**Violated Factor:** **Factor 11 (Dev/Prod Parity)** + **Factor 4 (Continuous Validation)**
+**Violated Factor:** **Factor IV (Continuous Validation)** + **Factor VIII (Human Validation)** + **Factor 4 (Continuous Validation)**
 
 **Prevention:**
 - Staging environment matching production
